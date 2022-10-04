@@ -51,4 +51,12 @@ export class GeolocationComponent implements OnInit {
     navigatorHelper.startRecord(video, stop)
     
   }
+
+  getDevices(){
+    navigatorHelper.getDevices()
+  }
+
+  getAudio(audio: HTMLAudioElement, stop: HTMLButtonElement){
+    navigatorHelper.getAudio(audio, stop)
+  }
 }
